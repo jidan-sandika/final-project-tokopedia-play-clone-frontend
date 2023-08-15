@@ -16,7 +16,7 @@ export default function Detail({ idVideo }) {
 		const fetchDataVideo = async () => {
 			try {
 				const response = await axios.get(
-					'http://localhost:5000/api/videos/' + id
+					'https://tokopedia-clone-backend-production.up.railway.app/api/videos/' + id
 				);
 				console.log(response.data);
 				setVideo(response.data);
@@ -27,7 +27,7 @@ export default function Detail({ idVideo }) {
 		const fetchDataProduct = async () => {
 			try {
 				const response = await axios.get(
-					'http://localhost:5000/api/products/' + id
+					'https://tokopedia-clone-backend-production.up.railway.app/api/products/' + id
 				);
 				console.log(response.data);
 				setProducts(response.data);
@@ -38,7 +38,7 @@ export default function Detail({ idVideo }) {
 		const fetchDataComment = async () => {
 			try {
 				const response = await axios.get(
-					'http://localhost:5000/api/comments/' + id
+					'https://tokopedia-clone-backend-production.up.railway.app/api/comments/' + id
 				);
 				console.log(response.data);
 				setComments(response.data);
@@ -54,7 +54,7 @@ export default function Detail({ idVideo }) {
     const getDataComment = async () => {
         try {
             const response = await axios.get(
-                'http://localhost:5000/api/comments/' + id
+                'https://tokopedia-clone-backend-production.up.railway.app/api/comments/' + id
             );
             console.log(response.data);
             setComments(response.data);

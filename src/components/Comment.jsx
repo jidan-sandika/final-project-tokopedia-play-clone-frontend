@@ -24,7 +24,7 @@ export default function Comment({ comments, idVideo, getComments }) {
 				id_video: idVideo,
 			};
 			const response = await axios.post(
-				'http://localhost:5000/api/comments/' + idVideo,
+				'https://tokopedia-clone-backend-production.up.railway.app/api/comments/' + idVideo,
 				postData
 			);
 			getComments();
@@ -37,6 +37,12 @@ export default function Comment({ comments, idVideo, getComments }) {
 
 	const handleClick = () => {
 		if (username === '' || comment === '') {
+			return;
+		}
+		if (username === ' ' || comment === ' ') {
+			return;
+		}
+		if (!username || !comment) {
 			return;
 		}
 		createComment(username, comment);
@@ -70,7 +76,7 @@ export default function Comment({ comments, idVideo, getComments }) {
 							setComment(event.target.value);
 						}}
 						type="text"
-						placeholder="write here..."
+						placeholder="write comment here..."
 					/>
 					<Button onClick={handleClick} colorScheme="teal" size="xs">
 						Submit

@@ -15,7 +15,7 @@ function App() {
 		const fetchData = async () => {
 			try {
 				const response = await axios.get(
-					'http://localhost:5000/api/thumbnails'
+					'https://tokopedia-clone-backend-production.up.railway.app/api/thumbnails'
 				);
 				setThumbnails(response.data);
 			} catch (error) {
