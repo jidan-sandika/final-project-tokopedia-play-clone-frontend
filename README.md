@@ -1,3 +1,19 @@
+## important before run the frontend side
+
+Make sure you already clone this file server for backend side and see the readme.md file [tokopedia-clone-backend](https://github.com/jidan-sandika/tokopedia-clone-backend.git)
+
+### Run Scripts
+
+In the project directory, you can run:
+
+#### `npm install`
+
+after evrything ok you can run:
+
+#### `npm start`
+
+## ---------------------------------------------------------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
